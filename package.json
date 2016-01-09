@@ -1,0 +1,28 @@
+{
+  "name": "trailpack-webserver",
+  "version": "0.0.1",
+  "description": "Parent to the Web Server Trailpacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trailsjs/trailpack-webserver.git"
+  },
+  "keywords": [
+    "trails",
+    "trailsjs",
+    "trailpack-webserver",
+    "http",
+    "hapi",
+    "koa",
+    "express"
+  ],
+  "author": "Trails.js Team <hello@trailsjs.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trailsjs/trailpack-webserver/issues"
+  },
+  "homepage": "https://github.com/trailsjs/trailpack-webserver#readme"
+}
