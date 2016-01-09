@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/trailsjs/trailpack-webserver/issues"
   },
-  "homepage": "https://github.com/trailsjs/trailpack-webserver#readme"
+  "homepage": "https://github.com/trailsjs/trailpack-webserver#readme",
+  "dependencies": {
+    "trailpack": "0.0.18"
+  }
 }
