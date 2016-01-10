@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/trailsjs/trailpack-webserver#readme",
   "dependencies": {
+    "lodash": "^3.10.1",
     "trailpack": "0.0.18"
   }
 }
