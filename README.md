@@ -20,6 +20,16 @@ class HapiTrailpack extends WebServerTrailpack {
 }
 ```
 
+## API
+
+#### `getOptionsFromQuery(query)`
+
+Extract non-criteria options from the query object.
+
+#### `getCriteriaFromQuery(query)`
+
+Extract only the criteria from the query object.
+
 ## Contributing
 We love contributions! Please check out our [Contributor's Guide](https://github.com/trailsjs/trails/blob/master/CONTRIBUTING.md) for more
 information on how our projects are organized and how to get started.
