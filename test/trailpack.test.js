@@ -2,12 +2,24 @@
 
 const assert = require('assert')
 const _ = require('lodash')
+const WebServerTrailpack = require('../')
+const Trailpack = require('trailpack')
 
 describe('Web Server Trailpack', () => {
   let pack
 
   before(() => {
-    pack = global.app.packs.webserver
+    pack = global.app.packs.webservertest
+  })
+
+  it('should load', () => {
+    assert(pack)
+  })
+  it('should be an instance of Trailpack', () => {
+    assert(pack instanceof Trailpack)
+  })
+  it('should be an instance of WebServerTrailpack', () => {
+    assert(pack instanceof WebServerTrailpack)
   })
 
   describe('#getCriteriaFromQuery', () => {

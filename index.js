@@ -31,8 +31,9 @@ module.exports = class WebServerTrailpack extends Trailpack {
   }
 
   constructor (app, config) {
-    super(app, _.merge({
-      pkg: require('./package')
-    }, config))
+    if (!config) {
+      throw new Error('trailpack-webserver must be subclassed. Do not load it directly.')
+    }
+    super(app, config)
   }
 }
