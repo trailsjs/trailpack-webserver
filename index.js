@@ -30,5 +30,10 @@ module.exports = class WebServerTrailpack extends Trailpack {
   getCriteriaFromQuery (query) {
     return _.omit(query, footprintOptions)
   }
-  
+
+  constructor (app, config) {
+    super(app, _.merge({
+      pkg: require('./package')
+    }, config))
+  }
 }
