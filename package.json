@@ -33,7 +33,7 @@
   "homepage": "https://github.com/trailsjs/trailpack-webserver#readme",
   "dependencies": {
     "lodash": "^4.5.1",
-    "trailpack": "1.0.0-beta-3"
+    "trailpack": "1.0.1"
   },
   "devDependencies": {
     "eslint": "^2.5.0",
