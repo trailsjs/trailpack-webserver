@@ -33,14 +33,14 @@
   "homepage": "https://github.com/trailsjs/trailpack-webserver#readme",
   "dependencies": {
     "lodash": "^3.10.1",
-    "trailpack": "0.0.21"
+    "trailpack": "^1.0.0-beta-1"
   },
   "devDependencies": {
-    "eslint": "^2.0.0-alpha-2",
+    "eslint": "^2.0.0",
     "eslint-config-trails": "^1.0.1",
     "mocha": "^2.3.4",
-    "smokesignals": "0.0.8",
-    "trails": "0.0.23"
+    "smokesignals": "^1.0.0",
+    "trails": "^1.0.0-beta-1"
   },
   "eslintConfig": {
     "extends": "trails"
