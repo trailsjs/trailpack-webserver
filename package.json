@@ -1,6 +1,6 @@
 {
   "name": "trailpack-webserver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parent to the Web Server Trailpacks",
   "main": "index.js",
   "scripts": {
