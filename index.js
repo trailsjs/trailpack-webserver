@@ -4,8 +4,6 @@ const _ = require('lodash')
 const Trailpack = require('trailpack')
 const footprintOptions = [
   'populate',
-  'limit',
-  'offset'
 ]
 
 /**
