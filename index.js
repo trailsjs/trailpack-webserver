@@ -5,7 +5,8 @@ const Trailpack = require('trailpack')
 const footprintOptions = [
   'populate',
   'limit',
-  'offset'
+  'offset',
+  'sort'
 ]
 
 /**
