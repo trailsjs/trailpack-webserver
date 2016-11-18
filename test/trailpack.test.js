@@ -87,8 +87,8 @@ describe('Web Server Trailpack', () => {
       const query = {
         foo: 'bar',
         populate: 'foo',
-        limit: "100",
-        offset: "0"
+        limit: '100',
+        offset: '0'
       }
       const options = pack.getOptionsFromQuery(query)
 
