@@ -1,6 +1,6 @@
 {
   "name": "trailpack-webserver",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Parent to the Web Server Trailpacks",
   "main": "index.js",
   "scripts": {
@@ -36,15 +36,15 @@
   },
   "homepage": "https://github.com/trailsjs/trailpack-webserver#readme",
   "dependencies": {
-    "lodash": "^4.5.1",
+    "lodash": "^4.13.1",
     "trailpack": "^1.0.5"
   },
   "devDependencies": {
     "eslint": "^3.10.2",
-    "eslint-config-trails": "^1.0.4",
+    "eslint-config-trails": "^1.0.7",
     "mocha": "^3.1.2",
-    "smokesignals": "^1.2.0",
-    "trails": "^1.0.0"
+    "smokesignals": "^1.2.2",
+    "trails": "^1.0.4"
   },
   "eslintConfig": {
     "extends": "trails"
