@@ -37,6 +37,25 @@ describe('Web Server Trailpack', () => {
       assert(!criteria.limit)
       assert(!criteria.offset)
     })
+
+    it('should parse criteria from the query object', () => {
+      const query = {
+        foo: 'bar',
+        boolTrue: 'true',
+        boolFalse: 'false',
+        nullOk: 'null',
+        numberOk: '10',
+        numberDecimalOk: '10.50'
+      }
+      const criteria = pack.getCriteriaFromQuery(query)
+
+      assert.equal(criteria.foo, 'bar')
+      assert.equal(criteria.boolTrue, true)
+      assert.equal(criteria.boolFalse, false)
+      assert.equal(criteria.nullOk, null)
+      assert.equal(criteria.numberOk, 10)
+      assert.equal(criteria.numberDecimalOk, 10.50)
+    })
   })
 
   describe('#getOptionsFromQuery', () => {
@@ -62,6 +81,21 @@ describe('Web Server Trailpack', () => {
 
       assert.equal(query.foo, 'bar')
       assert(_.isEmpty(options))
+    })
+
+    it('should parse non-criteria options from the query object', () => {
+      const query = {
+        foo: 'bar',
+        populate: 'foo',
+        limit: '100',
+        offset: '0'
+      }
+      const options = pack.getOptionsFromQuery(query)
+
+      assert(!options.foo)
+      assert.equal(options.populate, 'foo')
+      assert.equal(options.limit, 100)
+      assert.equal(options.offset, 0)
     })
   })
 })

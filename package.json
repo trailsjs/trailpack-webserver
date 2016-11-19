@@ -24,6 +24,10 @@
     {
       "name": "Travis Webb",
       "url": "https://github.com/tjwebb"
+    },
+    {
+      "name": "Aumard Jimmy",
+      "url": "https://github.com/jaumard"
     }
   ],
   "license": "MIT",
@@ -36,9 +40,9 @@
     "trailpack": "^1.0.5"
   },
   "devDependencies": {
-    "eslint": "^2.13.1",
+    "eslint": "^3.10.2",
     "eslint-config-trails": "^1.0.7",
-    "mocha": "^2.5.3",
+    "mocha": "^3.1.2",
     "smokesignals": "^1.2.2",
     "trails": "^1.0.4"
   },
