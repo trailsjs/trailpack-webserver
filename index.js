@@ -27,7 +27,7 @@ module.exports = class WebServerTrailpack extends Trailpack {
         value = null
       }
       const parseValue = parseFloat(value)
-      if (!isNaN(parseValue)) {
+      if (!isNaN(parseValue) && !/[a-z]/i.test(value)) {
         value = parseValue
       }
       return value
