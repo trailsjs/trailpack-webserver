@@ -45,7 +45,8 @@ describe('Web Server Trailpack', () => {
         boolFalse: 'false',
         nullOk: 'null',
         numberOk: '10',
-        numberDecimalOk: '10.50'
+        numberDecimalOk: '10.50',
+        objectId: '580626c2f0f47500b486436b'
       }
       const criteria = pack.getCriteriaFromQuery(query)
 
@@ -55,6 +56,7 @@ describe('Web Server Trailpack', () => {
       assert.equal(criteria.nullOk, null)
       assert.equal(criteria.numberOk, 10)
       assert.equal(criteria.numberDecimalOk, 10.50)
+      assert.equal(criteria.objectId, '580626c2f0f47500b486436b')
     })
   })
 
