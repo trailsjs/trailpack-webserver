@@ -21,7 +21,6 @@ module.exports = _.defaultsDeep({
   config: {
     main: {
       packs: [
-        smokesignals.Trailpack,
         TestPack
       ]
     }
