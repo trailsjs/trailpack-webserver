@@ -1,5 +1,8 @@
 # trailpack-webserver
 
+
+## Note: Deprecated as of v3. See [trailsjs/trailpack/server.js](https://github.com/trailsjs/trailpack/blob/master/server.js).
+
 [![Gitter][gitter-image]][gitter-url]
 [![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
